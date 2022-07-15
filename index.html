@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fizz Buzz</title>
+    <link rel="stylesheet" href="fizzbuzz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+</head>
+<meta name="viewport" content="width=device-width">
+
+
+<body style="background-color: rgb(25, 27, 46); text-align: center; height: 100%; min-height: 100%; overflow:hidden; display: flex; flex-direction: column;">
+    <div id="header">
+        <h1 id="title">FizzBuzz</h1>
+    </div>
+    
+
+    <div id="content">
+        <div>
+            <button id="playButton" class="play" type="button" onclick="playGame()">PLAY</button>
+        </div>
+        
+        <div id="before-start-game" style="display:none">
+            <h2 style="margin-top:1; margin-bottom:0; font-family: 'Schoolbell', arial, serif; font-size: 2.5vmax; letter-spacing: 0.1em; font-weight: 900; color:blanchedalmond;">Players</h2>
+            <div class="container">
+                <form class="form" name="form_players" autocomplete="off">
+                    <input type="text" id="nickname" name="nickname" placeholder="insert nickname here!" class="addName-field" />
+                    <button type="button" class="addName-button" id="addName-button" onclick="addName()" style = "font-size: 2vmax; color: rgb(59, 58, 58);">
+                        <i class="fa fa-plus" style="position: relative; left: -0.3em"></i>
+                    </button>
+                </form>
+                <div class="name-list-container" id="name-list-container">
+                    <p id="players" class="namelist"></p>
+                </div>
+            </div>
+            <button id="startButton" class="start" type="button" onclick="startGame()">START</button>
+        </div>
+
+        <div id="game" style="display:none; width: 100%; justify-content: center;">
+            <p style="width: 100%;">
+                <span class="player">player: </span><span id="playername" class="playername"></span>
+            </p>
+            <div style="width: 100%; margin: auto;">
+                <p id="number" class="number-card"></p>
+            </div>
+            <div style="width: 30%; margin: auto;">
+                <button type="button" class="mic-Button" id="mic-Button">
+                    <i id="mic" style="font-size:2.3vmax; padding: 0.5em;" class="fa">&#xf130;</i>
+                </button>
+            </div>
+            <!-- something to get answer -->
+            <div style="display: flex; flex-direction: row; width: 50%; margin: auto;">
+                <button id="fizzOption" class="option" type="button" onclick="choose('FIZZ')">FIZZ</button>
+                <button id="buzzOption" class="option" type="button" onclick="choose('BUZZ')">BUZZ</button>
+                <button id="fizzbuzzOption" class="option" type="button" onclick="choose('FIZZBUZZ')">FIZZBUZZ</button>
+                <button id="neitherOption" class="option" type="button" onclick="choose('neither')" style="background-color: #7e829f; font-family: 'Comic Sans MS';""></button>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div id="footer">
+        <p id="game-rules"> 
+            <span class="gametitle" id="game-rules-title"># Game Rules #</span> <br>
+            Say <span class="fizzbuzz">FIZZ</span> if your number is a multiple of <span class="number">2</span> <br>
+            Say <span class="fizzbuzz">BUZZ</span> if your number is a multiple of <span class="number">3</span> <br>
+            Say <span class="fizzbuzz">FIZZ BUZZ</span> if your number is multiple of <span class="number">BOTH 2 AND 3</span>!!!
+        </p>
+    </div>
+
+
+    <script src="fizzbuzz.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,225 @@
+body::before {
+    content: "";
+    background-image: url("seamless-pattern-with-numbers-vector-6651899.jpg");
+    opacity: 0.03;
+    background-size: cover;
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    margin: auto; 
+    width: 100%;
+}
+
+/* ########################## Page 1 things ########################## */
+span.gametitle {
+    font-family: 'Schoolbell', arial, serif; 
+    font-size: 1.8em;
+    font-weight: 900; 
+    color: #d4b5b0;
+}
+span.playername {
+    font-family: 'Schoolbell', arial, serif; 
+    font-size: 1.4em;
+    font-weight: 900; 
+    color: #e9d5ce;
+}
+span.player {
+    font-family: 'Schoolbell', arial, serif; 
+    font-size: 1.4em;
+    font-weight: 500; 
+    color: #9a8d88;
+}
+span.fizzbuzz {
+    color: #e9d5ce; font-style: italic;
+}
+span.number {
+    color: #f6917b;
+}
+h1 {
+    position:relative;
+    font-family: 'Schoolbell', arial, serif; 
+    font-size: 11vmax;
+    font-weight: 500;
+    color: #f5917b;
+    margin: auto;
+    margin-bottom: 0em;
+    margin-top: 0.4em;
+    }
+button.play {
+    position:relative;
+    font-family: 'Comic Sans MS';
+    font-size: 3.5vmax;
+    font-weight:900;
+    letter-spacing: 0.2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 40px;
+    border-style:double;
+    background-color:white;
+    color: #a18682;
+}
+/* ########################## Start Button ########################## */
+button.start {
+    position:relative;
+    font-family: 'Comic Sans MS';
+    font-size: 2.2vmax;
+    font-weight:900;
+    letter-spacing: 0.1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+    border-radius: 40px;
+    border-style:double;
+    background-color:white;
+    color: #f5917b;
+}
+/* ########################## Add Name Button ########################## */
+.container {
+    width: 30vmax;
+}
+.form {
+    display: flex;
+    flex-direction: row;
+}
+.addName-field {
+    width: 100%;
+    padding: 0.8em 3.5em 0.8em 1.5em;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    font-family: 'Schoolbell', arial, serif; 
+    font-size: 1.5vmax;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    color:rgb(54, 59, 96);
+}
+.addName-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -1.5em;
+}
+
+.name-list-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:12em;
+    margin-top: 5%;
+    padding: 0em 1em 1em 1em;
+    box-sizing: border-box;
+    background-color:#e9d5ce36;
+    border: none;
+    border-radius: 20px;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+p.namelist {
+    color: #e9d5ce; font-family: 'Schoolbell', arial, serif; 
+    font-size: 2vmax;
+}
+br.namelist {
+    content: "";
+    display: block;
+    margin: 0.1em;
+}
+/* ########################## game ########################## */
+.number-card {
+    background-color:rgb(240, 238, 238);
+    width: 28vmax;
+    border: None;
+    border-radius: 25px;
+    outline: None;
+    margin:auto;
+    margin-bottom: 0; margin-top: 0;
+    justify-content: center;
+    font-family: 'Comic Sans MS';
+    font-size: 11vmax;
+    font-weight: 900;
+    color:#f6917b;
+}
+.option {
+    flex-grow: 0;
+    flex-basis: 25%;
+    justify-content: space-between;
+    background-color:#f6917b;
+    border-radius: 1.7vmax;
+    border: None;
+    padding: 1em 0.8em 0.8em 1em;
+    margin: 0.5%;
+    margin-top: 5%;
+    font-family: 'Schoolbell', arial, serif; 
+    font-size: 1.5vmax;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color:#f6e1da;
+}
+.mic-Button {
+    background-color:rgb(233, 231, 231); 
+    border-radius: 100%; 
+    border-width: 0.3em;
+    margin: auto; 
+    margin-top: 5%;
+}
+.mic-Button:hover {
+    background-color:rgb(210, 207, 207);
+}
+/* ########################## others ########################## */
+p {
+    font-family: 'Schoolbell', arial, serif; 
+    font-size: 1.8vmax;
+    letter-spacing: 0.1em;
+    color: #7e829f;
+}
+br {
+    content: "";
+    display: block;
+    margin: 0.6em;
+}
+.popup-text {
+    font-family: 'Comic Sans MS';
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+.replayButton {
+    background-color:#9ed8f1;
+}
+.swal-footer {
+    text-align: center;
+}
+.swal-wide {
+    width: 20% !important;
+    font-size: 1.8vmax;
+}
